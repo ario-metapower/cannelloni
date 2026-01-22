@@ -89,7 +89,7 @@ std::string formatSocketAddress(const SocketStringAddress& socketAddress) {
         formattedAddress = socketAddress.ipAddress;
     }
 
-    formattedAddress += ":" + std::to_string(socketAddress.port);
+    formattedAddress = formattedAddress + ":" + std::to_string(socketAddress.port);
 
     return formattedAddress;
 }
